@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicolas Lafaille</title>
+  <link rel="stylesheet" href="../main.css">
+  <link rel="icon" href="public/flavicon.png">
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+
+<body>
+  <div class="page-container">
+    <div class="page">
+      <div class="section">
+        <div class="subsection" style="justify-content: space-between; /*margin-bottom: 20px;*/"> 
+          <div class="button" style ="margin-left :-11px" onclick="dark()">
+            <div class="text-container" style="font-weight: 600; padding: .25rem .5rem .25rem .5rem;"> 
+              <h1 style="margin: 2px 0px 2px 0px;">Nicolas Lafaille</h1>
+            </div>
+            <script> 
+              function dark() {
+                var element = document.body;
+                element.classList.toggle("dark");
+              }
+            </script>
+          </div>
+            <div style="display: flex; gap: 10px;">
+            <p><a class="button" style="text-decoration:none; padding: .25rem .5rem .25rem .5rem;" target="_blank" href="public/cv.pdf">CV</a></p>
+            <p><a class="button" style="text-decoration:none; padding: .25rem .5rem .25rem .5rem;" target="_blank" href="https://www.linkedin.com/in/nicolas-lafaille/">LinkedIn</a></p>
+            <p><a class="button" style="text-decoration:none; padding: .25rem .5rem .25rem .5rem;" target="_blank" href="https://github.com/nicolas-lafaille">GitHub</a></p>  
+          </div>
+        </div>
+      </div>
+
+      <div class="section"> 
+        <div class="text-container">
+          <h1>Why do microwaves' turntables turn ? </h1>
+          <p>Date : 30/09/2024</p>
+          <p><a href="../index.html">Back to home</a></p>
+        </div>
+      </div>
+      <div class="section"> 
+          <div class="text-container" >
+            <p>Earlier today, while I was microwaving my lasagnas, a memory came back to me. It wasn't about food at all but about physics.
+              See two years ago when I took the French competitive exam to enter CentraleSupélec I had to take multiple exams of physics, and one of them (<a href="https://www.concours-centrale-supelec.fr/sites/default/files/documents/P059.pdf">CCS Physics-Chemistry 2023</a>)
+              was about Electromagnetism and briefly covered the working principles of microwaves.
+              Remembering this particular subject that I found very interesting I decided to share it to answer the following question: <strong>why do microwaves' turntables turn</strong> ?
+            </p>
+            <p>Microwaves are very simple in principle: use microwaves (big surprise) to excite molecules which results in heat. In practice you don't just want to emit
+              microwaves arbitrarily, it would be highly inefficient as much of the energy would be dissipated (and maybe a bit dangerous). So what you want to do is to
+              circumscribe the waves inside of the microwave, and that is really easy: simply make the inside of the microwave out of metal so that the microwaves are reflected
+              and stay inside. With that comes a problem: the waves interfere with one another and their reflection which results in destructive interferences. Matter of fact,
+              the resulting electric field looks like this:
+            </p>
+            <p>
+              $$\begin{cases}
+              E_x(x,y,z,t) = E_1 \cos(k_x x)\,\sin(k_y y)\,\sin(k_z z)\,\cos(\omega t) \\
+              E_y(x,y,z,t) = E_2 \sin(k_x x)\,\cos(k_y y)\,\sin(k_z z)\,\cos(\omega t) \\
+              E_z(x,y,z,t) = E_3 \sin(k_x x)\,\sin(k_y y)\,\cos(k_z z)\,\cos(\omega t)
+              \end{cases}$$
+            </p>
+            <p>We can clearly see that at some points the field will be of higher norm. These are called antinodes, while the places where the field cancels out are the nodes.
+              In simpler terms, this means that some areas inside the microwave cavity will receive a lot of electromagnetic energy (and therefore heat food strongly),
+              while other areas will almost receive none. If you were to place a plate of food perfectly still in the oven, some parts would come out burning hot while
+              others would still be cold. You have probably experienced this before if you microwaved something without the turntable spinning—one bite is lava, the next one is ice.
+            </p>
+            <p>Matter of fact, here is a piece of paper soaked with cobalt chloride, which reveals
+              the waves when put inside of the microwave (illustration from the physics exam referenced earlier):
+            </p>
+            <img src="../public/microwave.png" style="max-width: 100%; height: auto; display: block;">
+            <p>The turntable is therefore not just some quirky design choice: it is a very practical solution to average out these hot and cold spots by constantly moving
+              the food through different regions of the standing wave pattern. In doing so, every part of the food gets its turn to pass through the “hot zones,”
+              and the result is a much more uniform heating. Of course, it’s not perfect (which is why instructions often say “stir halfway through” or “let stand for two minutes”),
+              but it is a clever way to work around the unavoidable physics of wave interference.</p>
+            <p>I like to think back on this small detail whenever I use a microwave. Something as ordinary as warming up lunch is actually built on fascinating principles
+              of electromagnetism, wave interference, and clever engineering. The next time you hear the hum of a microwave and see the plate spinning slowly inside,
+              you can remember that it’s not just turning for fun—it’s turning because physics says it has to.</p>
+            <p>Now you know why microwaves' turntables turn.</p>
+          </div>
+    </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

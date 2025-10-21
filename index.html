@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicolas Lafaille</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" href="public/flavicon.png">
+  </head>
+
+<body>
+  <div class="page-container">
+    <div class="page">
+      <div class="section">
+        <div class="subsection" style="justify-content: space-between; /*margin-bottom: 20px;*/"> 
+          <div class="button" style ="margin-left :-11px" onclick="dark()">
+            <div class="text-container" style="font-weight: 600; padding: .25rem .5rem .25rem .5rem;"> 
+              <h1 style="margin: 2px 0px 2px 0px;">Nicolas Lafaille</h1>
+            </div>
+            <script> 
+              function dark() {
+                var element = document.body;
+                element.classList.toggle("dark");
+              }
+            </script>
+          </div>
+            <div style="display: flex; gap: 10px;">
+            <p><a class="button" style="text-decoration:none; padding: .25rem .5rem .25rem .5rem;" target="_blank" href="public/cv.pdf">CV</a></p>
+            <p><a class="button" style="text-decoration:none; padding: .25rem .5rem .25rem .5rem;" target="_blank" href="https://www.linkedin.com/in/nicolas-lafaille/">LinkedIn</a></p>
+            <p><a class="button" style="text-decoration:none; padding: .25rem .5rem .25rem .5rem;" target="_blank" href="https://github.com/nicolas-lafaille">GitHub</a></p>  
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="text-container"> 
+          <img class="profilepic" src="public/pp.jpg">
+          <p> 
+            I am an engineering student at 
+            <a target="_blank" href="https://www.centralesupelec.fr/en/"> CentraleSupélec</a> 
+            in France where I pursue an engineering diploma and study applied mathematics and computer science. CentraleSupélec is a leading engineering school in France and founding member of the Paris-Saclay University.
+          </p>
+          <p>
+            Before joining CentraleSupélec, I studied at Lycée 
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Henri_Poincar%C3%A9">Henri Poincaré</a>
+            where I completed a two-year preparatory program in mathematics, physics and computer science (MPSI/MP*). 
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles">Preparatory classes</a> 
+            are a rigorous and intensive program in France that prepares students for the entrance exams to the top science and engineering schools.
+          </p>
+          <p>
+            I am currently an intern at Thales cortAIx lab, where I focus on deep reinforcement learning applied to cybersecurity. 
+          </p>
+        </div>
+      </div> 
+
+      <div class="section">
+        <div class="text-container"> 
+          <h2> 
+            <b style="font-size: 20px;">Education</b><hr> 
+          </h2>
+        </div>
+        <div class="subsection">
+          <img src="public/cs.png" class="edu-img">
+          <div class="text-container" style="flex: 1; justify-content: space-between; margin-left:20px;">
+            <div style="display: flex; gap: 10px; justify-content: space-between;">
+              <p style="margin:1px 0px;"> <b>CentraleSupélec - Université Paris-Saclay</b></p>
+              <p style="margin:1px 0px; font-size: 13px;">09/2023 - 06/2026</p>
+            </div>
+            <div>
+              <p style="font-size: 11px; margin: 1px 0px 0px 0px; ">CentraleSupelec is the 2nd best engineering school in France and part of Paris-Saclay University which was ranked 12th in
+                overall, 2nd in Mathematics and 8th in Physics in the 2024 ARWU world universities ranking.</p>
+              <ul style="padding: .0rem .0rem .0rem 1rem; margin: .5rem .0rem .5rem .0rem;">
+                <li>GPA: 4.19/4.33 : top 5% of the class out of 970 students  </li>
+                <li>Relevant Coursework :</li>
+                <ul style="padding: .0rem .0rem .0rem .5rem;"> 
+                  <li>Algorithms, Information Theory, Computational Acoustics </li>
+                  <li>Machine Learning, Artificial Intelligence, Statistics and Learning </li>
+                  <li>Optimization, Convergence, Integration and Probabilities, Partial Differential Equations, Modeling
+                    and Automatic Control, Signal Processing </li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="subsection" style="margin-top: 25px;">
+          <img src="public/lhp.png" class="edu-img">
+          <div class="text-container" style="flex: 1; justify-content: space-between; margin-left:20px;">
+            <div style="display: flex; gap: 10px; justify-content: space-between;">
+              <p style="margin:1px 0px;"> <b>CPGE Henri Poincaré</b></p>
+              <p style="margin:1px 0px; font-size: 13px;">09/2021 - 06/2023</p>
+            </div>
+            <div>
+              <p style="font-size: 11px; margin: 1px 0px 0px 0px; ">CPGE consist of two very intensive years with the main goal of training undergraduate students to take a very competitive
+                national exam to enroll in one of the Grande Ecoles.</p>
+              <ul style="padding: .0rem .0rem .0rem 1rem; margin: .5rem .0rem .5rem .0rem;">
+                <li>GPA: 4.0/4.0</li>
+                <li>Relevant Coursework :</li>
+                <ul style="padding: .0rem .0rem .0rem .5rem;"> 
+                  <li> Programming, Data Structures, Graph theory, Algebra, Calculus, Topology,
+                    Probabilities, Mechanics, Electromagnetism, Quantum physics</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="text-container">
+          <h2>
+          <b style="font-size: 20px;">Blog posts</b> <hr>
+          </h2>
+        </div>
+        <div class="text-container">
+          <ul class="posts">
+            <li>
+              <a href="blog/About-microwaves.html" class="button" style="text-decoration:none; padding: .25rem .5rem .25rem .5rem;" >
+                Why do microwaves' turntables turn ?
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="section footer">
+        <p>last updated: 30/09/2025</p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
